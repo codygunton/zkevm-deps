@@ -3,88 +3,148 @@
     "id": "zkevm-l1",
     "title": "zkEVM on L1 Dependencies",
     "description": "Dependency graph for Ethereum L1 zkEVM proof integration",
-    "lastModified": "2026-03-10T00:00:00Z"
+    "lastModified": "2026-03-10T15:48:53.593Z"
   },
   "nodes": [
     {
       "id": "execution-witness",
       "type": "graphNode",
-      "position": { "x": 0, "y": 0 },
+      "position": {
+        "x": 0,
+        "y": 0
+      },
       "data": {
         "label": "ExecutionWitness",
         "description": "Produce the execution witness data structure per block",
         "url": "https://github.com/ethereum/execution-specs/issues/1865"
+      },
+      "measured": {
+        "width": 314,
+        "height": 81
       }
     },
     {
       "id": "zkevm-guest-program",
       "type": "graphNode",
-      "position": { "x": 350, "y": 100 },
+      "position": {
+        "x": 350,
+        "y": 100
+      },
       "data": {
         "label": "zkEVM Guest Program",
         "description": "Stateless validation logic consuming EL block + ExecutionWitness",
         "url": "https://hackmd.io/i4z1eOYATKq3Ang-9Zw5hQ"
+      },
+      "measured": {
+        "width": 314,
+        "height": 81
       }
     },
     {
       "id": "zkvm-guest-api-standardization",
       "type": "graphNode",
-      "position": { "x": 0, "y": 200 },
+      "position": {
+        "x": -14.376980817347828,
+        "y": 192.3886572143453
+      },
       "data": {
         "label": "zkVM-guest API Standardization",
         "description": "Standardize interface between zkVM and guest program",
         "url": "https://github.com/eth-act/zkvm-standards"
-      }
+      },
+      "measured": {
+        "width": 314,
+        "height": 81
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "consensus-layer-integration",
       "type": "graphNode",
-      "position": { "x": 700, "y": 200 },
+      "position": {
+        "x": 700,
+        "y": 200
+      },
       "data": {
         "label": "Consensus Layer Integration",
         "description": "Allow CL clients to verify zkEVM proofs",
         "url": "https://eips.ethereum.org/EIPS/eip-7870"
+      },
+      "measured": {
+        "width": 255,
+        "height": 65
       }
     },
     {
       "id": "prover-infrastructure",
       "type": "graphNode",
-      "position": { "x": 0, "y": 400 },
+      "position": {
+        "x": 0,
+        "y": 400
+      },
       "data": {
         "label": "Prover Infrastructure",
         "description": "Infrastructure and interfaces to generate and verify proofs",
         "url": "https://github.com/eth-act/ere"
+      },
+      "measured": {
+        "width": 314,
+        "height": 81
       }
     },
     {
       "id": "benchmarking-and-metrics",
       "type": "graphNode",
-      "position": { "x": 350, "y": 300 },
+      "position": {
+        "x": 350,
+        "y": 300
+      },
       "data": {
         "label": "Benchmarking and Metrics",
         "description": "Benchmarking for network analysis and gas repricing",
         "url": "https://lab.ethpandaops.io/"
+      },
+      "measured": {
+        "width": 314,
+        "height": 81
       }
     },
     {
       "id": "security",
       "type": "graphNode",
-      "position": { "x": 700, "y": 400 },
+      "position": {
+        "x": 700,
+        "y": 400
+      },
       "data": {
         "label": "Security",
         "description": "Security metrics and hardening for all components",
         "url": "https://zkevm.ethereum.foundation/blog/zkevm-security-overview"
+      },
+      "measured": {
+        "width": 314,
+        "height": 81
       }
     },
     {
       "id": "epbs",
       "type": "graphNode",
-      "position": { "x": 350, "y": 500 },
+      "position": {
+        "x": -7.1856020912617,
+        "y": 584.4795822373524
+      },
       "data": {
         "label": "ePBS (External)",
         "description": "Increase time available to prove a block",
         "url": "https://eips.ethereum.org/EIPS/eip-7870"
-      }
+      },
+      "measured": {
+        "width": 257,
+        "height": 65
+      },
+      "selected": true,
+      "dragging": false
     }
   ],
   "edges": [
@@ -93,7 +153,36 @@
       "source": "execution-witness",
       "target": "zkevm-guest-program",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
+    },
+    {
+      "id": "e-zkvm-guest-api-standardization-consensus-layer-integration",
+      "source": "zkvm-guest-api-standardization",
+      "target": "consensus-layer-integration",
+      "type": "default",
+      "data": {
+        "label": "blocks"
+      }
+    },
+    {
+      "id": "e-benchmarking-and-metrics-security",
+      "source": "benchmarking-and-metrics",
+      "target": "security",
+      "type": "default",
+      "data": {
+        "label": "blocks"
+      }
+    },
+    {
+      "id": "e-zkvm-guest-api-standardization-benchmarking-and-metrics",
+      "source": "zkvm-guest-api-standardization",
+      "target": "benchmarking-and-metrics",
+      "type": "default",
+      "data": {
+        "label": "blocks"
+      }
     }
   ]
 }
