@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "id": "optional-proofs-hl",
+    "title": "Shipping Optional Proofs",
+    "description": "High-level issues for optional proofs",
+    "lastModified": "2026-03-10T16:37:48.822Z"
+  },
+  "nodes": [
+    {
+      "id": "code-chunkification",
+      "type": "graphNode",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "data": {
+        "label": "Code Chunkification"
+      },
+      "measured": {
+        "width": 214,
+        "height": 47
+      }
+    },
+    {
+      "id": "epbs",
+      "type": "graphNode",
+      "position": {
+        "x": 350,
+        "y": 0
+      },
+      "data": {
+        "label": "ePBS"
+      },
+      "measured": {
+        "width": 214,
+        "height": 47
+      }
+    },
+    {
+      "id": "zkvm-selection",
+      "type": "graphNode",
+      "position": {
+        "x": 700,
+        "y": 0
+      },
+      "data": {
+        "label": "ZKVM Selection"
+      },
+      "measured": {
+        "width": 214,
+        "height": 47
+      }
+    },
+    {
+      "id": "guest-program-selection",
+      "type": "graphNode",
+      "position": {
+        "x": 0,
+        "y": 120
+      },
+      "data": {
+        "label": "Guest Program Selection"
+      },
+      "measured": {
+        "width": 215,
+        "height": 47
+      }
+    },
+    {
+      "id": "zkevm-selection",
+      "type": "graphNode",
+      "position": {
+        "x": 350,
+        "y": 120
+      },
+      "data": {
+        "label": "ZKEVM Selection"
+      },
+      "measured": {
+        "width": 214,
+        "height": 47
+      }
+    },
+    {
+      "id": "bals",
+      "type": "graphNode",
+      "position": {
+        "x": 700,
+        "y": 120
+      },
+      "data": {
+        "label": "BALs"
+      },
+      "measured": {
+        "width": 214,
+        "height": 47
+      }
+    },
+    {
+      "id": "blocks-in-blobs",
+      "type": "graphNode",
+      "position": {
+        "x": 0,
+        "y": 240
+      },
+      "data": {
+        "label": "Blocks in Blobs"
+      },
+      "measured": {
+        "width": 214,
+        "height": 47
+      }
+    },
+    {
+      "id": "standard-cluster-implementations",
+      "type": "graphNode",
+      "position": {
+        "x": 350,
+        "y": 240
+      },
+      "data": {
+        "label": "Standard Cluster Implementations"
+      },
+      "measured": {
+        "width": 281,
+        "height": 47
+      }
+    },
+    {
+      "id": "prover-heavy-block-mitigation",
+      "type": "graphNode",
+      "position": {
+        "x": 700,
+        "y": 240
+      },
+      "data": {
+        "label": "Prover-heavy Block Mitigation"
+      },
+      "measured": {
+        "width": 252,
+        "height": 47
+      }
+    }
+  ],
+  "edges": []
+}

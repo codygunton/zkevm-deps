@@ -1,154 +1,286 @@
 {
   "meta": {
     "id": "optional-proofs",
-    "title": "Optional Proofs Dependencies",
-    "description": "Dependency graph for shipping optional proofs on Ethereum L1",
-    "lastModified": "2026-03-10T00:00:00Z"
+    "title": "Project 7",
+    "description": "Direct translation from Linear",
+    "lastModified": "2026-03-10T16:37:42.659Z"
   },
   "nodes": [
     {
       "id": "optional-proofs",
       "type": "graphNode",
-      "position": { "x": 1200, "y": 200 },
+      "position": {
+        "x": 1200,
+        "y": 200
+      },
       "data": {
         "label": "Optional Proofs",
         "description": "Ship optional proofs"
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
       }
     },
     {
       "id": "mvp-stability",
       "type": "graphNode",
-      "position": { "x": 850, "y": 100 },
+      "position": {
+        "x": 850,
+        "y": 100
+      },
       "data": {
         "label": "MVP Network Stability",
         "description": "Demonstrate stable MVP network operation"
+      },
+      "measured": {
+        "width": 281,
+        "height": 64
       }
     },
     {
       "id": "incident-response-testing",
       "type": "graphNode",
-      "position": { "x": 850, "y": 300 },
+      "position": {
+        "x": 864.7140111260899,
+        "y": 335.9675827526641
+      },
       "data": {
         "label": "Incident Response Testing",
         "description": "Test incident response procedures"
-      }
+      },
+      "measured": {
+        "width": 229,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "test-monitoring",
       "type": "graphNode",
-      "position": { "x": 850, "y": 450 },
+      "position": {
+        "x": 846.7302197497579,
+        "y": 507.22115437923844
+      },
       "data": {
         "label": "Test Monitoring",
         "description": "Monitoring for test networks"
-      }
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "cluster-reproduction",
       "type": "graphNode",
-      "position": { "x": 550, "y": 0 },
+      "position": {
+        "x": 550,
+        "y": 0
+      },
       "data": {
         "label": "Cluster Reproduction",
         "description": "Reproduce prover cluster setup"
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
       }
     },
     {
       "id": "prover-network-monitoring",
       "type": "graphNode",
-      "position": { "x": 550, "y": 125 },
+      "position": {
+        "x": 550,
+        "y": 125
+      },
       "data": {
         "label": "Prover Network Monitoring",
         "description": "Monitor prover network health"
+      },
+      "measured": {
+        "width": 229,
+        "height": 64
       }
     },
     {
       "id": "stan-monitoring",
       "type": "graphNode",
-      "position": { "x": 550, "y": 250 },
+      "position": {
+        "x": 550,
+        "y": 250
+      },
       "data": {
         "label": "Stateless Attester Network Monitoring",
         "description": "Monitor stateless attester network"
+      },
+      "measured": {
+        "width": 308,
+        "height": 64
       }
     },
     {
       "id": "incident-response-plans",
       "type": "graphNode",
-      "position": { "x": 550, "y": 375 },
+      "position": {
+        "x": 550,
+        "y": 375
+      },
       "data": {
         "label": "Incident Response Plans",
         "description": "Document incident response procedures"
+      },
+      "measured": {
+        "width": 263,
+        "height": 64
       }
     },
     {
       "id": "mvp-testing",
       "type": "graphNode",
-      "position": { "x": 550, "y": 500 },
+      "position": {
+        "x": 550,
+        "y": 509.7140111260899
+      },
       "data": {
         "label": "MVP Testing",
         "description": "Test MVP network functionality"
-      }
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
+      },
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "zkevm-selection",
       "type": "graphNode",
-      "position": { "x": 250, "y": 0 },
+      "position": {
+        "x": 281.092577147623,
+        "y": 15.546288573811509
+      },
       "data": {
         "label": "ZKEVM Selection",
         "description": "Select ZKEVMs for inclusion"
-      }
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "threat-model",
       "type": "graphNode",
-      "position": { "x": 250, "y": 200 },
+      "position": {
+        "x": -374.9608006672227,
+        "y": 307.2693911592994
+      },
       "data": {
         "label": "Threat Model",
         "description": "Define threat model for the system"
-      }
+      },
+      "measured": {
+        "width": 229,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "fallback-plans",
       "type": "graphNode",
-      "position": { "x": 250, "y": 400 },
+      "position": {
+        "x": -60.92577147623018,
+        "y": 494.83236030025023
+      },
       "data": {
         "label": "Fallback Plans",
         "description": "Define fallback procedures"
-      }
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "zkevm-inclusion-criteria",
       "type": "graphNode",
-      "position": { "x": -100, "y": -50 },
+      "position": {
+        "x": 67.89991659716429,
+        "y": -112.18515429524604
+      },
       "data": {
         "label": "ZKEVM Inclusion Criteria",
         "description": "Define criteria for ZKEVM inclusion"
-      }
+      },
+      "measured": {
+        "width": 232,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "hardware-spec",
       "type": "graphNode",
-      "position": { "x": -450, "y": -150 },
+      "position": {
+        "x": -334.9574645537948,
+        "y": -187.31109257714763
+      },
       "data": {
         "label": "Hardware Specs",
         "description": "Define hardware specifications"
-      }
+      },
+      "measured": {
+        "width": 214,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "zkevm-diversity-criteria",
       "type": "graphNode",
-      "position": { "x": -450, "y": 0 },
+      "position": {
+        "x": -154.62051709758128,
+        "y": 116.59716430358633
+      },
       "data": {
         "label": "ZKEVM Diversity Criteria",
         "description": "Define ZKEVM diversity requirements"
-      }
+      },
+      "measured": {
+        "width": 247,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "zkevm-security-criteria",
       "type": "graphNode",
-      "position": { "x": -450, "y": 150 },
+      "position": {
+        "x": -336.51209341117595,
+        "y": -24.118432026688907
+      },
       "data": {
         "label": "ZKEVM Security Criteria",
         "description": "Define ZKEVM security requirements"
-      }
+      },
+      "measured": {
+        "width": 244,
+        "height": 64
+      },
+      "selected": false,
+      "dragging": false
     }
   ],
   "edges": [
@@ -157,126 +289,162 @@
       "source": "mvp-stability",
       "target": "optional-proofs",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "incident-response-testing->optional-proofs",
       "source": "incident-response-testing",
       "target": "optional-proofs",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "test-monitoring->optional-proofs",
       "source": "test-monitoring",
       "target": "optional-proofs",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "cluster-reproduction->mvp-stability",
       "source": "cluster-reproduction",
       "target": "mvp-stability",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "prover-network-monitoring->mvp-stability",
       "source": "prover-network-monitoring",
       "target": "mvp-stability",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "stan-monitoring->mvp-stability",
       "source": "stan-monitoring",
       "target": "mvp-stability",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "zkevm-selection->cluster-reproduction",
       "source": "zkevm-selection",
       "target": "cluster-reproduction",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "incident-response-plans->incident-response-testing",
       "source": "incident-response-plans",
       "target": "incident-response-testing",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "mvp-testing->test-monitoring",
       "source": "mvp-testing",
       "target": "test-monitoring",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "zkevm-inclusion-criteria->zkevm-selection",
       "source": "zkevm-inclusion-criteria",
       "target": "zkevm-selection",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "threat-model->prover-network-monitoring",
       "source": "threat-model",
       "target": "prover-network-monitoring",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "threat-model->stan-monitoring",
       "source": "threat-model",
       "target": "stan-monitoring",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "threat-model->zkevm-diversity-criteria",
       "source": "threat-model",
       "target": "zkevm-diversity-criteria",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "threat-model->incident-response-plans",
       "source": "threat-model",
       "target": "incident-response-plans",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "fallback-plans->incident-response-plans",
       "source": "fallback-plans",
       "target": "incident-response-plans",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "hardware-spec->zkevm-inclusion-criteria",
       "source": "hardware-spec",
       "target": "zkevm-inclusion-criteria",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "zkevm-diversity-criteria->zkevm-inclusion-criteria",
       "source": "zkevm-diversity-criteria",
       "target": "zkevm-inclusion-criteria",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     },
     {
       "id": "zkevm-security-criteria->zkevm-inclusion-criteria",
       "source": "zkevm-security-criteria",
       "target": "zkevm-inclusion-criteria",
       "type": "default",
-      "data": { "label": "blocks" }
+      "data": {
+        "label": "blocks"
+      }
     }
   ]
 }
