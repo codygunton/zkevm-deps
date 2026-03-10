@@ -21,7 +21,7 @@ export default defineConfig({
       },
     },
   ],
-  base: '/zkevm-deps/',
+  base: process.env.VITE_MODE === 'edit' ? '/' : '/zkevm-deps/',
   server: {
     proxy: {
       '/api': 'http://localhost:3001',

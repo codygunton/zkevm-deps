@@ -5,7 +5,7 @@ import { join } from 'path';
 
 const app = express();
 const PORT = 3001;
-const DATA_DIR = join(import.meta.dirname, '..', 'data');
+const DATA_DIR = join(process.cwd(), 'data');
 
 app.use(cors());
 app.use(express.json({ limit: '5mb' }));
