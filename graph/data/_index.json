@@ -4,6 +4,11 @@
       "id": "zkevm-l1",
       "title": "zkEVM on L1 Dependencies",
       "description": "Dependency graph for Ethereum L1 zkEVM proof integration"
+    },
+    {
+      "id": "optional-proofs",
+      "title": "Optional Proofs Dependencies",
+      "description": "Dependency graph for shipping optional proofs on Ethereum L1"
     }
   ]
 }
