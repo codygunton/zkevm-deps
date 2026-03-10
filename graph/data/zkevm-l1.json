@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "id": "zkevm-l1",
+    "title": "zkEVM on L1 Dependencies",
+    "description": "Dependency graph for Ethereum L1 zkEVM proof integration",
+    "lastModified": "2026-03-10"
+  },
+  "nodes": [
+    {
+      "id": "execution-witness",
+      "type": "default",
+      "position": { "x": 0, "y": 0 },
+      "data": {
+        "label": "ExecutionWitness",
+        "description": "Produce the execution witness data structure per block",
+        "status": "in-progress",
+        "url": "https://github.com/ethereum/execution-specs/issues/1865"
+      }
+    },
+    {
+      "id": "zkevm-guest-program",
+      "type": "default",
+      "position": { "x": 400, "y": 125 },
+      "data": {
+        "label": "zkEVM Guest Program",
+        "description": "Stateless validation logic consuming EL block + ExecutionWitness",
+        "status": "in-progress",
+        "url": "https://hackmd.io/i4z1eOYATKq3Ang-9Zw5hQ"
+      }
+    },
+    {
+      "id": "zkvm-guest-api-standardization",
+      "type": "default",
+      "position": { "x": 0, "y": 250 },
+      "data": {
+        "label": "zkVM-guest API Standardization",
+        "description": "Standardize interface between zkVM and guest program",
+        "status": "in-progress",
+        "url": "https://github.com/eth-act/zkvm-standards"
+      }
+    },
+    {
+      "id": "consensus-layer-integration",
+      "type": "default",
+      "position": { "x": 800, "y": 250 },
+      "data": {
+        "label": "Consensus Layer Integration",
+        "description": "Allow CL clients to verify zkEVM proofs",
+        "status": "in-progress",
+        "url": "https://eips.ethereum.org/EIPS/eip-7870"
+      }
+    },
+    {
+      "id": "prover-infrastructure",
+      "type": "default",
+      "position": { "x": 0, "y": 500 },
+      "data": {
+        "label": "Prover Infrastructure",
+        "description": "Infrastructure and interfaces to generate and verify proofs",
+        "status": "in-progress",
+        "url": "https://github.com/eth-act/ere"
+      }
+    },
+    {
+      "id": "benchmarking-and-metrics",
+      "type": "default",
+      "position": { "x": 400, "y": 375 },
+      "data": {
+        "label": "Benchmarking and Metrics",
+        "description": "Benchmarking for network analysis and gas repricing",
+        "status": "in-progress",
+        "url": "https://lab.ethpandaops.io/"
+      }
+    },
+    {
+      "id": "security",
+      "type": "default",
+      "position": { "x": 800, "y": 500 },
+      "data": {
+        "label": "Security",
+        "description": "Security metrics and hardening for all components",
+        "status": "in-progress",
+        "url": "https://zkevm.ethereum.foundation/blog/zkevm-security-overview"
+      }
+    },
+    {
+      "id": "epbs",
+      "type": "default",
+      "position": { "x": 0, "y": 750 },
+      "data": {
+        "label": "ePBS (External)",
+        "description": "Increase time available to prove a block",
+        "status": "not-started",
+        "url": "https://eips.ethereum.org/EIPS/eip-7870"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "execution-witness->zkevm-guest-program",
+      "source": "execution-witness",
+      "target": "zkevm-guest-program",
+      "type": "smoothstep",
+      "data": { "label": "blocks" }
+    },
+    {
+      "id": "zkvm-guest-api-standardization->zkevm-guest-program",
+      "source": "zkvm-guest-api-standardization",
+      "target": "zkevm-guest-program",
+      "type": "smoothstep",
+      "data": { "label": "blocks" }
+    },
+    {
+      "id": "zkevm-guest-program->consensus-layer-integration",
+      "source": "zkevm-guest-program",
+      "target": "consensus-layer-integration",
+      "type": "smoothstep",
+      "data": { "label": "blocks" }
+    },
+    {
+      "id": "prover-infrastructure->consensus-layer-integration",
+      "source": "prover-infrastructure",
+      "target": "consensus-layer-integration",
+      "type": "smoothstep",
+      "data": { "label": "blocks" }
+    },
+    {
+      "id": "epbs->consensus-layer-integration",
+      "source": "epbs",
+      "target": "consensus-layer-integration",
+      "type": "smoothstep",
+      "data": { "label": "blocks" }
+    },
+    {
+      "id": "execution-witness->benchmarking-and-metrics",
+      "source": "execution-witness",
+      "target": "benchmarking-and-metrics",
+      "type": "smoothstep",
+      "data": { "label": "related" }
+    },
+    {
+      "id": "zkevm-guest-program->security",
+      "source": "zkevm-guest-program",
+      "target": "security",
+      "type": "smoothstep",
+      "data": { "label": "related" }
+    }
+  ]
+}

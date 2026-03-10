@@ -1,0 +1,9 @@
+{
+  "graphs": [
+    {
+      "id": "zkevm-l1",
+      "title": "zkEVM on L1 Dependencies",
+      "description": "Dependency graph for Ethereum L1 zkEVM proof integration"
+    }
+  ]
+}
