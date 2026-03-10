@@ -35,11 +35,11 @@ export function GraphView({ graphId }: Props) {
         <ReactFlow
           nodes={nodes}
           edges={edges}
-          onNodesChange={isEditMode ? onNodesChange : undefined}
+          onNodesChange={onNodesChange}
           onEdgesChange={isEditMode ? onEdgesChange : undefined}
           onConnect={isEditMode ? onConnect : undefined}
           nodeTypes={nodeTypes}
-          nodesDraggable={isEditMode}
+          nodesDraggable
           nodesConnectable={isEditMode}
           defaultEdgeOptions={defaultEdgeOptions}
           fitView

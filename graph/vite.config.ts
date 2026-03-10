@@ -21,7 +21,7 @@ export default defineConfig({
       },
     },
   ],
-  base: '/planning/',
+  base: '/zkevm-deps/',
   server: {
     proxy: {
       '/api': 'http://localhost:3001',

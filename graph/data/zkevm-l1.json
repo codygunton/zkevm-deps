@@ -3,7 +3,7 @@
     "id": "zkevm-l1",
     "title": "zkEVM on L1 Dependencies",
     "description": "Dependency graph for Ethereum L1 zkEVM proof integration",
-    "lastModified": "2026-03-10T15:48:53.593Z"
+    "lastModified": "2026-03-10T15:51:31.685Z"
   },
   "nodes": [
     {
@@ -20,7 +20,7 @@
       },
       "measured": {
         "width": 314,
-        "height": 81
+        "height": 80
       }
     },
     {
@@ -37,7 +37,7 @@
       },
       "measured": {
         "width": 314,
-        "height": 81
+        "height": 80
       }
     },
     {
@@ -54,7 +54,7 @@
       },
       "measured": {
         "width": 314,
-        "height": 81
+        "height": 80
       },
       "selected": false,
       "dragging": false
@@ -73,7 +73,7 @@
       },
       "measured": {
         "width": 255,
-        "height": 65
+        "height": 64
       }
     },
     {
@@ -90,7 +90,7 @@
       },
       "measured": {
         "width": 314,
-        "height": 81
+        "height": 80
       }
     },
     {
@@ -107,7 +107,7 @@
       },
       "measured": {
         "width": 314,
-        "height": 81
+        "height": 80
       }
     },
     {
@@ -124,7 +124,7 @@
       },
       "measured": {
         "width": 314,
-        "height": 81
+        "height": 80
       }
     },
     {
@@ -140,8 +140,8 @@
         "url": "https://eips.ethereum.org/EIPS/eip-7870"
       },
       "measured": {
-        "width": 257,
-        "height": 65
+        "width": 258,
+        "height": 64
       },
       "selected": true,
       "dragging": false
