@@ -1,12 +1,12 @@
 {
   "graphs": [
     {
-      "id": "optional-proofs-hl",
+      "id": "top-level",
       "title": "Shipping Optional Proofs",
       "description": "High-level issues for optional proofs"
     },
     {
-      "id": "optional-proofs",
+      "id": "project-7",
       "title": "Project 7",
       "description": "Direct translation from Linear"
     }
