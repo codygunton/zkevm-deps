@@ -1,0 +1,43 @@
+flowchart BT
+    optional_proofs[🚢 optional proofs 🚢]
+
+    incident_response_plans[incident response plans]
+    incident_response_testing[incident response testing]
+    fallback_plans[fallback plans]
+    threat_model[threat model]
+
+    test_monitoring[test monitoring]
+    mvp_testing[MVP testing]
+
+    mvp_stability[MVP network stability]
+    prover_network_monitoring[prover network monitoring]
+    stan_monitoring[stateless attester network monitoring]
+    hardware_spec[hardware specs]
+    cluster_reproduction[cluster reproduction]
+    zkevm_selection[ZKEVM selection]
+    zkevm_inclusion_criteria[ZKEVM inclusion criteria]
+    zkevm_diversity_criteria[ZKEVM diversity criteria]
+    zkevm_security_criteria[ZKEVM security criteria]
+
+    mvp_stability --> optional_proofs
+    cluster_reproduction --> mvp_stability
+    prover_network_monitoring --> mvp_stability
+    stan_monitoring --> mvp_stability
+    zkevm_selection --> cluster_reproduction
+    zkevm_inclusion_criteria --> zkevm_selection
+    hardware_spec --> zkevm_inclusion_criteria
+    zkevm_diversity_criteria --> zkevm_inclusion_criteria
+    zkevm_security_criteria --> zkevm_inclusion_criteria
+    threat_model --> prover_network_monitoring
+    threat_model --> stan_monitoring
+    threat_model --> zkevm_diversity_criteria
+
+    incident_response_plans --> incident_response_testing
+    incident_response_testing --> optional_proofs
+    fallback_plans --> incident_response_plans
+    threat_model --> incident_response_plans
+
+    test_monitoring --> optional_proofs
+    mvp_testing --> test_monitoring
+     
+
