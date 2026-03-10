@@ -3,7 +3,7 @@
     "id": "optional-proofs",
     "title": "Project 7",
     "description": "Direct translation from Linear",
-    "lastModified": "2026-03-10T16:37:42.659Z"
+    "lastModified": "2026-03-10T16:55:39.108Z"
   },
   "nodes": [
     {
@@ -153,7 +153,7 @@
         "width": 214,
         "height": 64
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     },
     {
@@ -178,8 +178,8 @@
       "id": "threat-model",
       "type": "graphNode",
       "position": {
-        "x": -374.9608006672227,
-        "y": 307.2693911592994
+        "x": -550.9608006672227,
+        "y": 263.2693911592994
       },
       "data": {
         "label": "Threat Model",
@@ -232,8 +232,8 @@
       "id": "hardware-spec",
       "type": "graphNode",
       "position": {
-        "x": -334.9574645537948,
-        "y": -187.31109257714763
+        "x": -168.9574645537948,
+        "y": -293.31109257714763
       },
       "data": {
         "label": "Hardware Specs",
@@ -250,8 +250,8 @@
       "id": "zkevm-diversity-criteria",
       "type": "graphNode",
       "position": {
-        "x": -154.62051709758128,
-        "y": 116.59716430358633
+        "x": -174.62051709758128,
+        "y": 128.59716430358634
       },
       "data": {
         "label": "ZKEVM Diversity Criteria",
@@ -268,8 +268,8 @@
       "id": "zkevm-security-criteria",
       "type": "graphNode",
       "position": {
-        "x": -336.51209341117595,
-        "y": -24.118432026688907
+        "x": -294.51209341117595,
+        "y": -116.11843202668891
       },
       "data": {
         "label": "ZKEVM Security Criteria",
