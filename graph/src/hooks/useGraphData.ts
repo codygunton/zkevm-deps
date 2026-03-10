@@ -34,7 +34,7 @@ export function useGraphData(graphId: string) {
         id,
         source: connection.source,
         target: connection.target,
-        type: 'smoothstep',
+        type: 'default',
         data: { label: 'blocks' },
       };
       setEdges((eds) => [...eds, newEdge]);

@@ -13,7 +13,7 @@ import { defaultEdgeOptions } from '../lib/defaults';
 import { GraphNode } from './GraphNode';
 import { GraphToolbar } from './GraphToolbar';
 
-const nodeTypes = { default: GraphNode };
+const nodeTypes = { graphNode: GraphNode };
 
 interface Props {
   graphId: string;
